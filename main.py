@@ -1,8 +1,9 @@
-#Write your code below this line 👇
+# define function
 def prime_checker(number):
   is_prime = True
 
   for i in range(2, number):
+    # check if number is divisible by all numbers before number
     if number % i == 0:
       is_prime = False
   if is_prime:
@@ -10,10 +11,7 @@ def prime_checker(number):
   else:
     print(f'The number {number} is not a prime number')
   
-
-#Write your code above this line 👆
-    
-#Do NOT change any of the code below👇
+# receive input from user
 n = int(input("Check this number: "))
 prime_checker(number=n)
 
